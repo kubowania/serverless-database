@@ -11,9 +11,10 @@ function App() {
     setMessage(Object.values(results.data)[0].text)
   }
 
-  useEffect(() => {
+  // Don't really need this to be in a useEffect
+//   useEffect(() => {
     fetchData()
-  },[])
+//   },[])
 
   return (
     <div className="App">
